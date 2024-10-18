@@ -3,9 +3,11 @@
 Android Activity Lifecycle explains how an Android app's activity (a single screen in the app) behaves during its life cycle. In short, this explains how Android handles activities and what happens to them as users interact with the app, switch between apps, or close them. Here's a simplified breakdown of the procedure:
 
 **1) Activity Launched:** The app's activity (screen) is started.
+
     - The system calls onCreate(), initializing the activity.
     - Then, onStart() is called, indicating the activity is about to become visible.
     - After that, onResume() is called when the activity is fully visible and interactive (activity is running).
+    
 **2) Activity Running:** The app is in the foreground and the user is interacting with it.
 
 **3) onPause():** When another activity comes to the foreground (for example, a new screen appears, or the user switches to another app), the current activity goes into the background, but it’s still partially alive. The activity is no longer visible to the user.
